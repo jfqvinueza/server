@@ -1,0 +1,8 @@
+npm run start:dev            //  iniciar con --watch para que auto compile
+nest g resource items
+npm install -g @nestjs/cli@latest
+npm install --save @nestjs/swagger                       //instalar 
+npm install --save @nestjs/swagger swagger-ui-express    //libreria de express
+
+nest --version
+dto   // para validar los atributos
