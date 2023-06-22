@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Patch, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Put, Patch, Param, Delete } from '@nestjs/common';
 import { AppService } from './app.service';
 import { ApiTags } from '@nestjs/swagger';
 
@@ -13,7 +13,8 @@ export class AppController {
     return this.appService.getHello();
   }
   @Get('product')
-  getProducts(): string[] {
+  getProducts():string[]{
     return this.appService.getAll();
   }
+  
 }
